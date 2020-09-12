@@ -47,7 +47,7 @@ LOCAL_CFLAGS += -DWCNSS_QTI_AOSP
 endif
 
 # gscan.cpp: address of array 'cached_results[i].results' will always evaluate to 'true'
-LOCAL_CLANG_CFLAGS := -Wno-pointer-bool-conversion
+LOCAL_CLANG_CFLAGS := -Wno-pointer-bool-conversion -Wno-format
 
 LOCAL_CFLAGS += -Wall -Werror
 
@@ -119,7 +119,7 @@ LOCAL_CFLAGS += -DWCNSS_QTI_AOSP
 endif
 
 # gscan.cpp: address of array 'cached_results[i].results' will always evaluate to 'true'
-LOCAL_CLANG_CFLAGS := -Wno-pointer-bool-conversion
+LOCAL_CLANG_CFLAGS := -Wno-pointer-bool-conversion -Wno-format
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH) \
